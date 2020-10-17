@@ -67,3 +67,66 @@ select {
   font: inherit;
 }
 
+* {
+  border: solid grey 1px;
+}
+
+.purple-background {
+  background-color: purple;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  position: relative;
+  height: 67vh;
+  max-width: 80vw;
+  border-radius: 15px;
+  box-shadow: 0px 12px 20px -5px;
+  background-color: white;
+}
+
+/* Styling for images on the left */
+.left-side {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.covered {
+  position: relative;
+  max-width: max-content;
+}
+
+.desk {
+  position: relative;
+  bottom: 105%;
+  width: 800px;
+  max-width: 115%;
+  left: -18%;
+}
+
+.block {
+  position: absolute;
+  /* z-index: 3; */
+  top: 42%;
+  left: -12%;
+}
+/* End of styling for images on the left */
+
+/* Beginning of styling for text on the right */
+.right-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+}
+
+.question-line {
+  display: flex;
+}
