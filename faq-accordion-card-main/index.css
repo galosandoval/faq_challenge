@@ -122,21 +122,23 @@ select {
   position: relative;
   max-width: -webkit-max-content;
   max-width: -moz-max-content;
-  max-width: max-content;
+  top: -47%;
+  left: -432px;
+  height: 814px;
+  width: 800px;
 }
 
 .desk {
   position: relative;
-  bottom: 105%;
-  width: 800px;
-  max-width: 115%;
-  left: -18%;
+  bottom: 153%;
+  width: 750px;
+  left: -13%;
 }
 
 .block {
   position: absolute;
-  top: 42%;
-  left: -12%;
+  top: 39%;
+  left: -11%;
 }
 
 /* End of styling for images on the left */
