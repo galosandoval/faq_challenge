@@ -68,13 +68,13 @@ select {
 }
 
 * {
-  border: solid grey 1px;
-  font-family: "Open Sans", sans-serif;
+  // border: solid grey 1px;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
 }
 
 .purple-background {
-  background-image: linear-gradient(
-    #9932cc, #5218fa);
+  background-image: linear-gradient(#9932cc, #5218fa);
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -90,6 +90,7 @@ select {
   border-radius: 15px;
   box-shadow: 0px 12px 10px -5px #522d80;
   background-color: white;
+  // overflow: scroll;
 }
 
 /* Styling for images on the left */
@@ -115,20 +116,28 @@ select {
 
 .block {
   position: absolute;
-  /* z-index: 3; */
   top: 42%;
   left: -12%;
 }
 /* End of styling for images on the left */
 
 /* Beginning of styling for text on the right */
+h1 {
+  font-size: 30px;
+  padding-bottom: 15px;
+}
+
 .right-side {
-  width: 50%;
-  top: 50%;
-  }
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: scroll;
+  margin-right: 10%;
+}
 
 label .carrot {
-  height: 13px;
+  height: 10px;
 }
 
 .tabs {
@@ -136,16 +145,17 @@ label .carrot {
 }
 
 .tab {
+  border-bottom: #e0e0e0 solid 1px;
   width: 100%;
   overflow: hidden;
+
   &-label {
+    font-weight: 300;
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    padding: 1em;
+    padding: 1em 1em 1em 0;
     cursor: pointer;
-    &:hover {
-      font-weight: 700;
-    }
     // &::after {
     //   // content: "\276F";
     //   width: 1em;
@@ -166,9 +176,12 @@ input {
   z-index: -1;
 }
 input:checked {
-  ~ label .carrot{
-    font-weight: 700;
+  ~ label .carrot {
     transform: rotate(180deg);
+  }
+  ~ label {
+    font-weight: 700;
+    font-size: 0.95rem;
   }
   ~ .tab-content {
     max-height: 200px;
